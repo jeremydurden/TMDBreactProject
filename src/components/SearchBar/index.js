@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import searchIcon from "../../images/search-icon.svg";
 
 //Styles
-import { Wrapper, Content } from "../Grid/Grid.styles";
+import { Wrapper, Content } from "../SearchBar/SearchBar.styles";
 
 const SearchBar = ({ setSearchTerm }) => {
   const [state, setState] = useState("");
