@@ -9,7 +9,8 @@ import NoImage from "../../images/no_image.jpg";
 import { Wrapper, Content, Text } from "./MovieInfo.styles";
 
 const MovieInfo = ({ movie }) => (
-  <Wrapper prop={movie.backdrop_path}>
+  <Wrapper backdrop={movie.backdrop_path}>
+    {console.log(movie.backdrop_path, "this is mv.bp from index wrapper")}
     <Content>
       <Thumb
         image={
