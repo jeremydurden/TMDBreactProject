@@ -16,8 +16,6 @@ export const useHomeFetch = () => {
   const [error, setError] = useState(false);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
 
-  console.log(state, "fetch hook");
-
   const fetchMovies = async (page, searchTerm = "") => {
     try {
       setError(false);
