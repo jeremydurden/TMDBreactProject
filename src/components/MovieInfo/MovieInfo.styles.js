@@ -42,11 +42,14 @@ export const Text = styled.div`
   .rating-directors {
     display: flex;
     justify-content: flext-start;
+    position: relative;
   }
   .score {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    left: 11px;
     width: 35px;
     height: 35px;
     background: #fff;

@@ -22,16 +22,16 @@ const MovieInfo = ({ movie }) => (
       />
       <Text>
         <h1>{movie.title}</h1>
-        <h3>Plot</h3>
+        <h2>Plot</h2>
         <p>{movie.overview}</p>
 
         <div className="rating-directors">
           <div>
-            <h3>Rating</h3>
+            <h2>Rating</h2>
             <div className="score">{movie.vote_average}</div>
           </div>
           <div className="director">
-            <h3>DIRECTOR{movie.directors.length > 1 ? "S" : ""}</h3>
+            <h2>DIRECTOR{movie.directors.length > 1 ? "S" : ""}</h2>
             {movie.directors.map((director) => (
               <p key={director.credit_id}>{director.name}</p>
             ))}
